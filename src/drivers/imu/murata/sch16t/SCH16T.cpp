@@ -110,7 +110,7 @@ int SCH16T::probe()
 
 	// Determine chip version based on COMP_ID and ASIC_ID
 
-	if ((asic_id == 0x21 && comp_id == 0x23) || (asic_id == 0x20 && comp_id == 0x17)) {
+	if ((asic_id == 0x21 && comp_id == 0x23) || (asic_id == 0x20 && comp_id == 0x17) || (asic_id == 0x21 && comp_id == 0x26)) {
 		// ASIC_ID = 0x21, COMP_ID = 0x23 is a K01 variant of REV_1
 		// ASIC_ID = 0x20, COMP_ID = 0x17 is a B13 variant of REV_1
 		_detected_version = ChipVersion::REV_1;
